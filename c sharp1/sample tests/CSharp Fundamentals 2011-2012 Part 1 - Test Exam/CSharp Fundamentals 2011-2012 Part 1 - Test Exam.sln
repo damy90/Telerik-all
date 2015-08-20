@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp Fundamentals 2011-2012 Part 1 - Test Exam", "CSharp Fundamentals 2011-2012 Part 1 - Test Exam.csproj", "{395468BB-C1C5-4DF2-834B-EF6B3C60D3B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. least majority multiple 2-nd try", "2. least majority multiple 2-nd try\2. least majority multiple 2-nd try.csproj", "{12D034BF-EC6B-4803-86E3-26E739D60049}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trapezoid", "Trapezoid\Trapezoid.csproj", "{4B977102-4D9C-47ED-ACB9-E503A80C4BDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odd Number", "Odd Number\Odd Number.csproj", "{989BA759-99C6-44B1-B4E0-AD958228F008}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5. Fall Down", "Fall Down\5. Fall Down.csproj", "{68F73A18-8678-4E04-BAC2-AF89C5C25261}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{395468BB-C1C5-4DF2-834B-EF6B3C60D3B5}.Debug|x86.ActiveCfg = Debug|x86
+		{395468BB-C1C5-4DF2-834B-EF6B3C60D3B5}.Debug|x86.Build.0 = Debug|x86
+		{395468BB-C1C5-4DF2-834B-EF6B3C60D3B5}.Release|x86.ActiveCfg = Release|x86
+		{395468BB-C1C5-4DF2-834B-EF6B3C60D3B5}.Release|x86.Build.0 = Release|x86
+		{12D034BF-EC6B-4803-86E3-26E739D60049}.Debug|x86.ActiveCfg = Debug|x86
+		{12D034BF-EC6B-4803-86E3-26E739D60049}.Debug|x86.Build.0 = Debug|x86
+		{12D034BF-EC6B-4803-86E3-26E739D60049}.Release|x86.ActiveCfg = Release|x86
+		{12D034BF-EC6B-4803-86E3-26E739D60049}.Release|x86.Build.0 = Release|x86
+		{4B977102-4D9C-47ED-ACB9-E503A80C4BDB}.Debug|x86.ActiveCfg = Debug|x86
+		{4B977102-4D9C-47ED-ACB9-E503A80C4BDB}.Debug|x86.Build.0 = Debug|x86
+		{4B977102-4D9C-47ED-ACB9-E503A80C4BDB}.Release|x86.ActiveCfg = Release|x86
+		{4B977102-4D9C-47ED-ACB9-E503A80C4BDB}.Release|x86.Build.0 = Release|x86
+		{989BA759-99C6-44B1-B4E0-AD958228F008}.Debug|x86.ActiveCfg = Debug|x86
+		{989BA759-99C6-44B1-B4E0-AD958228F008}.Debug|x86.Build.0 = Debug|x86
+		{989BA759-99C6-44B1-B4E0-AD958228F008}.Release|x86.ActiveCfg = Release|x86
+		{989BA759-99C6-44B1-B4E0-AD958228F008}.Release|x86.Build.0 = Release|x86
+		{68F73A18-8678-4E04-BAC2-AF89C5C25261}.Debug|x86.ActiveCfg = Debug|x86
+		{68F73A18-8678-4E04-BAC2-AF89C5C25261}.Debug|x86.Build.0 = Debug|x86
+		{68F73A18-8678-4E04-BAC2-AF89C5C25261}.Release|x86.ActiveCfg = Release|x86
+		{68F73A18-8678-4E04-BAC2-AF89C5C25261}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

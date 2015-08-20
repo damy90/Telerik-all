@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>Problem 4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Calculator</h1>
+        <section id="menu">
+            <input type="button" name="View" class="button" value="View" />
+            <input type="button" name="Edit" class="button" value="Edit" />
+            <input type="button" name="Help" class="button" value="Help" />
+        </section>
+    </header>
+    <div>
+        <section id="display">
+            <input type="text" name="result" id="result" value="8854455" />
+        </section>
+
+        <section id="binary-display">
+            <ul>
+                <li>0000</li>
+                <li>0000</li>
+                <li>0000</li>
+                <li>0000</li>
+                <li>0000</li>
+                <li>0000</li>
+                <li>0000</li>
+                <li>0000</li>
+            </ul>
+            <ul class="bitIndex">
+                <li>63  </li>
+                <li>47  </li>
+                <li>  32</li>
+            </ul>
+
+            <ul>
+                <li>0000</li>
+                <li>0000</li>
+                <li>1000</li>
+                <li>0111</li>
+                <li>0001</li>
+                <li>1011</li>
+                <li>1011</li>
+                <li>0111</li>
+            </ul>
+            <ul class="bitIndex">
+                <li>31  </li>
+                <li>15  </li>
+                <li>   0</li>
+            </ul>
+        </section>
+        <section id="calc">
+            <fieldset class="radio">
+                <input name="Hex" type="radio" id="Hex" /> <label for="Hex">Hex</label>
+                <input name="Dec" type="radio" id="Dec" checked /> <label for="Dec">Dec</label>
+                <input name="Oct" type="radio" id="Oct" /> <label for="Oct">Oct</label>
+                <input name="Bin" type="radio" id="Bin" /> <label for="Bin">Bin</label>
+            </fieldset>
+            <fieldset class="radio">
+                <input name="Qword" type="radio" id="Qword" checked /> <label for="Qword">Qword</label>
+                <input name="Dword" type="radio" id="Dword" /> <label for="Dword">Dword</label>
+                <input name="Word" type="radio" id="Word" /> <label for="Word">Word</label>
+                <input name="Byte" type="radio" id="Byte" /> <label for="Byte">Byte</label>
+            </fieldset>
+            <fieldset id="buttons">
+                <input type="button" name="" class="button" value=" " disabled />
+                <input type="button" name="Mod" class="button opperations" value="Mod" />
+                <input type="button" name="A" class="button" value="A" disabled />
+                <input type="button" name="MC" class="button opperations" value="MC" />
+                <input type="button" name="MR" class="button opperations" value="MR" />
+                <input type="button" name="MS" class="button opperations" value="MS" />
+                <input type="button" name="M+" class="button opperations" value="M+" />
+                <input type="button" name="M-" class="button opperations" value="M-" />
+                <input type="button" name="(" class="button opperations" value="(" />
+                <input type="button" name=")" class="button opperations" value=")" />
+                <input type="button" name="B" class="button" value="B" disabled />
+                <input type="button" name="←" class="button opperations" value="←" />
+                <input type="button" name="CE" class="button opperations" value="CE" />
+                <input type="button" name="C" class="button opperations" value="C" />
+                <input type="button" name="±" class="button opperations" value="±" />
+                <input type="button" name="√" class="button" value="√" disabled />
+                <input type="button" name="RoL" class="button opperations" value="RoL" />
+                <input type="button" name="RoR" class="button opperations" value="RoR" />
+                <input type="button" name="C" class="button" value="C" disabled />
+                <input type="button" name="7" class="button values" value="7" />
+                <input type="button" name="8" class="button values" value="8" />
+                <input type="button" name="9" class="button values" value="9" />
+                <input type="button" name="/" class="button opperations" value="/" />
+                <input type="button" name="%" class="button" value="%" disabled />
+                <input type="button" name="Or" class="button opperations" value="Or" />
+                <input type="button" name="Xor" class="button opperations" value="Xor" />
+                <input type="button" name="D" class="button" value="D" disabled />
+                <input type="button" name="4" class="button values" value="4" />
+                <input type="button" name="5" class="button values" value="5" />
+                <input type="button" name="6" class="button values" value="6" />
+                <input type="button" name="*" class="button opperations" value="*" />
+                <input type="button" name="1/x" class="button" value="1/x" disabled />
+                <input type="button" name="Lsh" class="button opperations" value="Lsh" />
+                <input type="button" name="Rsh" class="button opperations" value="Rsh" />
+                <input type="button" name="E" class="button" value="E" disabled />
+                <input type="button" name="1" class="button values" value="1" />
+                <input type="button" name="2" class="button values" value="2" />
+                <input type="button" name="3" class="button values" value="3" />
+                <input type="button" name="-" class="button opperations" value="-" />
+                <input type="button" name="=" class="button opperations" id="calculate" value="=" />
+                <input type="button" name="Not" class="button opperations" value="Not" />
+                <input type="button" name="And" class="button opperations" value="And" />
+                <input type="button" name="F" class="button" value="F" disabled />
+                <input type="button" name="0" class="button values" id="zerobtn" value="0" />
+                <input type="button" name="." class="button" value="." disabled />
+                <input type="button" name="+" class="button opperations" value="+" />
+            </fieldset>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        body {
+            background: #000;
+            color: #fff;
+            font-size: 1em;
+            line-height: 1.5em;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        #wrapper {
+            width: 900px;
+            height: 600px;
+            margin: 0 auto;
+        }
+
+        #snake-canvas {
+            background: #3a4719;
+        }
+
+        #snake-legend span {
+            margin-right: 40px;
+            font-weight: bold;
+            color: yellow;
+            font-size: 1.2em;
+        }
+
+            #snake-legend span:last-of-type {
+                font-size: 1em;
+                color: #fff;
+                font-weight: normal;
+            }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <canvas id="snake-canvas" width="900" height="600"></canvas>
+        <p id="snake-legend">
+            Help: <span>Use the arrows to navigate the snake. Use the spacebar to start/stop the game</span>
+        </p>
+        <p></p>
+    </div>
+    <script src="scripts/game-object.js"></script>
+    <script src="scripts/text-object.js"></script>
+    <script src="scripts/food.js"></script>
+    <script src="scripts/snake.js"></script>
+    <script src="scripts/renderer.js"></script>
+    <script src="scripts/game.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

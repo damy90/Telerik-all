@@ -1,0 +1,13 @@
+﻿ul li:before{ 
+    content:"-";
+    position:relative;
+    left:-5px;
+}
+ul li{
+    text-indent:-35px;
+    list-style-type:none;
+}
+
+ul{
+    margin-top:-15px;
+}

@@ -1,0 +1,91 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;
+    font-size:16px;
+}
+body{
+    width:960px;
+    color: #3E8BFF;
+}
+
+div.msg-bar-content {
+    display: none;
+}
+.msg-bar > li {
+    display: inline-block;
+    padding-top: 5px;
+}
+ul.msg-bar {
+    margin: 200px 50px;
+}
+
+li:hover > div.msg-bar-content {
+    display: block;
+    background: #A3FFED;
+    position:absolute;
+    width: 440px;
+    left: 50px;
+    top: 43px;
+    padding: 10px 5px 0 15px;
+    border: 1px solid black;
+    border-bottom: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+a.msg-bar-btn {
+    display: inline-block;
+    width: 114px;
+    padding: 5px 0;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid black;
+
+    color: #3E8BFF;
+    background: #a3ffed;
+    background: -moz-linear-gradient(top, #a3ffed 0%, #00ffcf 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a3ffed), color-stop(100%,#00ffcf));
+    background: -webkit-linear-gradient(top, #a3ffed 0%,#00ffcf 100%);
+    background: -o-linear-gradient(top, #a3ffed 0%,#00ffcf 100%);
+    background: -ms-linear-gradient(top, #a3ffed 0%,#00ffcf 100%);
+    background: linear-gradient(to bottom, #a3ffed 0%,#00ffcf 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a3ffed', endColorstr='#00ffcf',GradientType=0 );
+}
+li:hover a.msg-bar-btn {
+    background:#00D9B0;
+    border-top: none;
+}
+li.me-item {
+    background: url(imgs/me.png) no-repeat;
+}
+li.other-item {
+    background: url(imgs/male.png) no-repeat;
+}
+.msg-bar-content li {
+    background-position: 5px 40%;
+    list-style-type: none;
+    padding-bottom: 5px;
+}
+.msg-bar-content span.user {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px 15px 5px 25px;
+    float: none;
+    width: auto;
+    margin: 0;
+}
+.msg-bar-content span {
+    text-align: right;
+    float: right;
+    display: inline-block;
+    padding: 5px 15px;
+    margin-right: 10px;
+    width: 300px;
+    border-bottom: 1px solid black;
+}
+li:last-of-type span{
+    border:none;
+}
+.msg-bar > li:hover {
+    background: #A3FFED;
+}

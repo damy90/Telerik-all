@@ -1,0 +1,21 @@
+﻿#info{
+    width: 205px;
+}
+.border *, .border{
+    text-align:center;
+    border:solid 1px;
+}
+
+.border td{
+    width: 30px;
+}
+
+td.left{
+    text-align:left !important;
+}
+td.right{
+    text-align:right !important;
+}
+td.bottom{
+    vertical-align:bottom;
+}

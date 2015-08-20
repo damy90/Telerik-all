@@ -1,0 +1,28 @@
+<!-- Problem 5. nbsp
+
+Write a function that replaces non breaking white-spaces in a text with &nbsp; -->
+
+<h1>Strings</h1>
+<h2>Problem 5. nbsp</h2>
+<h4>please use console <i>(and Sources for more details)</i></h4>
+<p style="font-size: 0.7em">(F12, Ctrl+Shift+C)</p>
+<h5>description</h5>
+<pre>
+Write a function that replaces non breaking white-spaces in a text with &nbsp;
+</pre>
+
+<script>
+function testNBSP () {
+	// body...
+	'use strict';
+
+	var someText = '"Lorem ipsum..."   is one of the most common filler texts, popular with typesetters and graphic designers. "Li Europan lingues..." is another similar example.',
+		result;
+
+	result = someText.split(' ').join('&nbsp;');
+	console.log(result);
+
+};
+
+testNBSP();
+</script>

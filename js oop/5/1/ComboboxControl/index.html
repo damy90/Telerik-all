@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Combo Box Control</title>
+		<link rel="stylesheet" href="css/combo-box.css">
+	</head>
+	<body>
+		<div id="dropdown-list">
+			some html
+		</div>
+		<script type="text/x-handlebars-template" id="person-template">
+			<div class="person-item" id="person-item-{{id}}">
+				<strong class="person-name">{{name}}</strong>
+				<p class="person-age">{{age}}</p>
+				<img src="{{avatarUrl}}" width="100px" alt="{{name}}" />
+			</div>
+		</script>
+
+		<script type="text/javascript" src="js/libs/require-v2.1.14.js" data-main="js/app.js"></script>
+	</body>
+</html>

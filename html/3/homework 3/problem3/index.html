@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>Problem 3</title>
+    <link rel="stylesheet" href="styles.css">
+<body>
+    <header>Drag a column header and drop it here to group by the column</header>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ProductID </th>
+                <th>Product name</th>
+                <th>Unit price</th>
+                <th>Quantity per unit</th>
+                <th>Units in stock</th>
+                <th>Discontinued</th>
+            </tr>
+            <tr>
+                <th><input type="text" name="InputProductID" value="" /></th>
+                <th><input type="text" name="InputProductName" value="" /></th>
+                <th><input type="text" id="untiPriceTextBox" name="InputUnitPrice" value="" /> <input type="image" src="imgButton.png" name="imageButon" alt="image buton" /></th>
+                <th><input type="text" name="InputQuantity-unit" value="" /></th>
+                <th><input type="text" name="InputUnitsStock" value="" />  <input type="image" src="imgButton.png" name="imageButon" alt="image buton" /></th>
+                <th><input type="checkbox" name="check" value="Discontinued" /> <input type="image" src="imgButton.png" name="imageButon" alt="image buton" /></th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="2">
+                    <input type="image" src="first.png" name="first" alt="first" />
+                    <input type="image" src="prev.png" name="prev" alt="previous" />
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">10</a>
+                    ...
+                    <input type="image" src="next.png" name="next" alt="next" />
+                    <input type="image" src="last.png" name="last" alt="last" />
+                </td>
+
+                <td>
+                    Page size<select name="Page Size">
+                        <option value="Value 1" selected="selected">10</option>
+                        <option value="Value 2">20</option>
+                        <option value="Value 3">50</option>
+                    </select>
+                </td>
+
+                <td colspan="3">
+                    333500 items in 35000 pages
+                </td>
+            </tr>
+        </tfoot>
+
+        <tbody>
+
+            <tr>
+                <td>1</td>
+                <td>Chai</td>
+                <td>$18</td>
+                <td>10 boxes x 20 bags</td>
+                <td>39</td>
+                <td><input type="checkbox" name="check" value="Discontinued" /></td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Chang</td>
+                <td>$19</td>
+                <td>24 - 12 oz bottles</td>
+                <td>17</td>
+                <td><input type="checkbox" name="check" value="Discontinued" /></td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Aniseed Syrop</td>
+                <td>$11</td>
+                <td>12 - 550ml</td>
+                <td>13</td>
+                <td><input type="checkbox" name="check" value="Discontinued" /></td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Doma6na rakia</td>
+                <td>$1</td>
+                <td>14 kila 4ista smurt</td>
+                <td>53</td>
+                <td><input type="checkbox" name="check" value="Discontinued" /></td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>Teachers</td>
+                <td>$13</td>
+                <td>3 kila wiski</td>
+                <td>0</td>
+                <td><input type="checkbox" name="check" value="Discontinued" checked="checked"/></td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <td>Mineralna voda</td>
+                <td>$150</td>
+                <td>125 ml</td>
+                <td>120</td>
+                <td><input type="checkbox" name="check" value="Discontinued" /></td>
+            </tr>
+
+            <tr>
+                <td>7</td>
+                <td>Voda sas zahar</td>
+                <td>$200</td>
+                <td>300l</td>
+                <td>15</td>
+                <td><input type="checkbox" name="check" value="Discontinued" /></td>
+            </tr>
+
+            <tr>
+                <td>8</td>
+                <td>Voda sas zahar</td>
+                <td>$16</td>
+                <td>jll</td>
+                <td>6</td>
+                <td><input type="checkbox" name="check" value="Discontinued" /></td>
+            </tr>
+
+            <tr>
+                <td>9</td>
+                <td>Voda sas zahar</td>
+                <td>$12</td>
+                <td>kkjk j</td>
+                <td>29</td>
+                <td><input type="checkbox" name="check" value="Discontinued" /></td>
+            </tr>
+
+            <tr>
+                <td>10</td>
+                <td>Voda sas zahar</td>
+                <td>$100</td>
+                <td>ooo</td>
+                <td>31</td>
+                <td><input type="checkbox" name="check" value="Discontinued" /></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!-- Problem 6. Extract text from HTML
+
+Write a function that extracts the content of a html page given as text.
+The function should return anything that is in a tag, without the tags.
+Example:
+
+<html>
+  <head>
+    <title>Sample site</title>
+  </head>
+  <body>
+    <div>text
+      <div>more text</div>
+      and more...
+    </div>
+    in body
+  </body>
+</html>
+Result: Sample sitetextmore textand more...in body -->
+
+
+<h1>Strings</h1>
+<h2>Problem 5. nbsp</h2>
+<h4>please use console <i>(and Sources for more details)</i></h4>
+<p style="font-size: 0.7em">(F12, Ctrl+Shift+C)</p>
+<h5>description</h5>
+<pre style="color: #c1c1c1;">
+Write a function that extracts the content of a html page given as text.
+The function should return anything that is in a tag, without the tags.
+Example:
+
+&lt;html>
+  &lt;head>
+    &lt;title>Sample site&lt;/title>
+  &lt;/head>
+  &lt;body>
+    &lt;div>text
+      &lt;div>more text&lt;/div>
+      and more...
+    &lt;/div>
+    in body
+  &lt;/body>
+&lt;/html>
+Result: Sample sitetextmore textand more...in body
+</pre>
+
+<script>
+function extrTxtHtml (text) {
+  // body...
+  var output = [];
+  for (var i = 0; i < text.length; i++) {
+    if (text[i] === '<') {
+      i = text.indexOf('>', i);
+    } else {
+      output.push(text[i]);
+    }
+    
+  };
+  return output.join('');
+}
+
+console.log(extrTxtHtml(htmlInput))
+</script>

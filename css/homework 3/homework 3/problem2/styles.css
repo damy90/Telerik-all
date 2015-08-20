@@ -1,0 +1,39 @@
+﻿body{
+    background-color:#eeeeee;
+}
+h1{
+    font-weight:normal;
+}
+section{
+    border:2px solid lightgray;
+    padding:20px;
+    width:350px;
+    margin: 40px 5px;
+    background-color:white;
+}
+section:after {/*float fix (the parent element will clear its children)*/
+	content: "";
+	display: table;
+	clear: both;
+}
+img{
+    float:left;
+    padding-right: 20px;
+}
+a.button{
+    text-decoration:none;
+    color:white;
+    background-image:url('button.png');
+    width:73px;
+    display: inline-block;;
+    text-indent: 25px;
+    height:25px;
+    height: 22px;
+    padding-top: 3px;
+    float: right;
+    margin-left: 10px;
+}
+p{
+    padding:0;
+    margin:0 0 5px 0;
+}

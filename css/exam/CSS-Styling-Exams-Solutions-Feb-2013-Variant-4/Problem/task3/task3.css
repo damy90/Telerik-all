@@ -1,0 +1,86 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+    font-size:16px;
+}
+body {
+    width: 960px;
+}
+
+div#wrapper {
+    margin: 20px;
+    display: table;
+    border-collapse: collapse;
+}
+#wrapper > div {
+    width: 140px;
+    height: 250px;
+    padding: 10px 3px 0 5px;
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+    display: inline-block;
+    float: left;
+}
+#wrapper > div:first-of-type {
+    border-left: 2px solid lightgray;
+}
+#wrapper > div:nth-child(2n) {
+    border: 2px solid lightgray;
+    height: 270px;
+    
+    background: #ffffff;
+    background: -moz-linear-gradient(top,  #ffffff 0%, #f1f2f3 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f1f2f3));
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#f1f2f3 100%);
+    background: -o-linear-gradient(top,  #ffffff 0%,#f1f2f3 100%);
+    background: -ms-linear-gradient(top,  #ffffff 0%,#f1f2f3 100%);
+    background: linear-gradient(to bottom,  #ffffff 0%,#f1f2f3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f1f2f3',GradientType=0 );
+}
+/*headings*/
+#wrapper div hgroup {
+    background-position: 0px 5px !important;
+    height: 40px;
+    display: table-cell;
+    vertical-align: bottom;
+    padding-left: 40px;
+}
+#wrapper div:nth-of-type(1) hgroup {
+    background: url(imgs/install.png) no-repeat;
+}
+#wrapper div:nth-of-type(2) hgroup {
+    background: url(imgs/tuneUp.png) no-repeat;
+}
+#wrapper div:nth-of-type(3) hgroup {
+    background: url(imgs/manage.png) no-repeat;
+}
+#wrapper div:nth-of-type(4) hgroup {
+    background: url(imgs/openSource.png) no-repeat;
+}
+#wrapper div:nth-of-type(5) hgroup {
+    background: url(imgs/twitter.png) no-repeat;
+}
+#wrapper div:nth-of-type(6) hgroup {
+    background: url(imgs/about.png) no-repeat;
+}
+
+p {
+    padding: 15px 0 5px;
+}
+a {
+    text-decoration: none;
+    display: block;
+    color: #D12D2F;
+}
+span {
+    text-transform: uppercase;
+}
+div.yellowBox a {
+    display: initial;
+}
+div.yellowBox {
+    margin: -3px 0;
+    background: #FFFFDD;
+    border: 1px solid yellow;
+}

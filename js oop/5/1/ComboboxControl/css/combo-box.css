@@ -1,0 +1,29 @@
+.combo-box {
+	border: 1px solid black;
+	display: inline-block;
+}
+
+.combo-box .selected {
+	padding-right: 50px;
+	background: url(../images/drop-down-arrow.png) no-repeat center right;
+}
+
+.combo-box .selected:hover {
+	background-color: lightgray; 
+}
+
+.combo-box > .list {
+	border-top: 1px solid black;
+}
+
+.combo-box .list {
+	overflow-y: scroll;
+}
+
+.combo-box .list .selected {
+	background: gray;
+}
+
+.combo-box .list .list-item:hover {
+	background: lightgray;
+}

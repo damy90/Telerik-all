@@ -1,0 +1,26 @@
+﻿
+ol{
+    list-style-type:upper-roman;
+}
+
+ol ol{
+    list-style-type:lower-latin;
+    padding-left: 20px;
+}
+
+ol ol ul{
+    list-style-type:circle;
+}
+
+ol ol ul ul{
+    list-style-type:square;
+}
+
+ol ul{
+    list-style-type:disc;
+    padding-left: 20px;
+}
+
+ol ol ul{
+    padding-left: 40px;
+}

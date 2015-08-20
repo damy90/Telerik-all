@@ -1,0 +1,13 @@
+﻿thead tr:first-child {
+    font-size: 24px;
+}
+thead tr {
+    font-size: 18px;
+    font-weight: bold;
+}
+table,th, td
+{
+    border: 1px solid black;
+    border-collapse:collapse;
+    padding:2px 5px;
+}

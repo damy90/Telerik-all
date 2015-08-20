@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Number guessing game</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <script src="jquery.min.js"></script>
+</head>
+
+<body>
+    <p>Open the console to cheat</p>
+    <fieldset id="guess">
+        <legend>Gues the number</legend>
+        <label for="inputNumber">Enter a number:</label>
+        <input type="number" id="inputNumber" />
+        <button>Guess number</button>
+    </fieldset>
+
+    <fieldset id="win">
+        <legend>You win!</legend>
+        <label for="score">Please enter your nick name:</label>
+        <input type="text" id="score" />
+        <button>Save score</button>
+    </fieldset>
+
+    <button id="show-scoreboard">Show-scoreboard</button>
+    <button id="hide-scoreboard">Hide-scoreboard</button>
+
+    <fieldset id="scoreboard">
+        <legend>Scoreboard</legend>
+        <ul></ul>
+    </fieldset>
+    <script src="game.js"></script>
+</body>
+
+</html>

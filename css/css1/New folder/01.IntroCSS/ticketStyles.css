@@ -1,0 +1,38 @@
+.italic{
+font-style: italic;
+text-align: top;
+vertical-align: top;
+color: rgb(212, 210, 192);
+}
+
+
+body{
+background-color: rgb(89,89,89);
+color: rgb(169, 177, 175);
+}
+
+.yellow{
+color: rgb(226, 221, 167);
+}
+
+.red{
+color: rgb(230, 44, 67);
+
+}
+
+.orange{
+color: rgb(197, 102, 51);
+font-weight: bold;
+}
+
+td{
+padding-bottom: 15px;
+padding-right: 15px;
+}
+
+span.circle {
+    border-radius: 50%;
+	width:1em;
+	height:1em;
+    background-color: #71b47a;
+}

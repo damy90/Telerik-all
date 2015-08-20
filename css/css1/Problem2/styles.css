@@ -1,0 +1,25 @@
+﻿thead {
+    background-color: lightgreen;
+    color:white;
+    border-bottom: 1px solid lightgray;
+}
+td{
+    border-left: 1px solid lightgray;
+    padding: 5px 50px 5px 5px;
+}
+table
+{
+    border-collapse:collapse;
+}
+tr:nth-child(2n){
+    background-color:#F0F0F0;
+}
+td:first-child{
+    border:none;
+}
+img {
+    padding: 0 5px;
+}
+input[type="checkbox"] {
+    margin-left: 15px;
+}

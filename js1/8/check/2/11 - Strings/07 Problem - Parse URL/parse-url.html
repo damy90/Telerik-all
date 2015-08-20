@@ -1,0 +1,65 @@
+<!-- Problem 7. Parse URL
+
+Write a script that parses an URL address given in the format: [protocol]://[server]/[resource] and extracts from it the [protocol], [server] and [resource] elements.
+Return the elements in a JSON object.
+Example:
+
+URL	result
+http://telerikacademy.com/Courses/Courses/Details/239	{ protocol: http, 
+server: telerikacademy.com 
+resource: /Courses/Courses/Details/239 -->
+
+
+<h1>Strings</h1>
+<h2>Problem 7. Parse URL</h2>
+<h4>please use console <i>(and Sources for more details)</i></h4>
+<p style="font-size: 0.7em">(F12, Ctrl+Shift+C)</p>
+<h5>description</h5>
+<pre>
+Write a script that parses an URL address given in the format: [protocol]://[server]/[resource] and extracts from it the [protocol], [server] and [resource] elements.
+Return the elements in a JSON object.
+Example:
+
+URL															result
+http://telerikacademy.com/Courses/Courses/Details/239		{ protocol: http, 
+															server: telerikacademy.com 
+															resource: /Courses/Courses/Details/239
+</pre>
+
+<script>
+var url = 'http://telerikacademy.com/Courses/Courses/Details/239';
+function urlParse (url) {
+	var stIndx,
+		endIndx,
+		protocol,
+		server,
+		resource,
+		parseRes = {};
+//	01234567890123456789012345678901234567890123456789012
+//  http://telerikacademy.com/Courses/Courses/Details/239
+
+	// find protocol
+	endIndx = url.indexOf(':');
+	protocol = url.substr(0, endIndx);
+
+	// find server
+	stIndx = endIndx + 3;
+	endIndx = url.indexOf('/', url.indexOf('.'));
+	server = url.substring(stIndx, endIndx);
+
+	// find resource
+	stIndx = endIndx + 1;
+	endIndx = url.length;
+	resource = url.substring(stIndx, endIndx);
+
+	parseRes.protocol = protocol;
+	parseRes.server = server;
+	parseRes.resource = resource;
+
+	return parseRes;
+}
+
+var answer = urlParse(url);
+console.log(url);
+console.log(answer);
+</script>

@@ -1,0 +1,51 @@
+﻿table{
+border:1px solid rgb(221, 220, 198);
+}
+th, td{
+border-left:1px solid rgb(221, 220, 198);
+}
+th{
+border-bottom:1px solid black;
+}
+table{
+border-collapse:collapse;
+}
+th{
+background-color:rgb(84, 183, 6);
+color:rgb(255, 255, 255);
+}
+tbody tr:nth-child(2n) {
+    background-color:rgb(236, 236, 216);
+}
+
+th, td {
+vertical-align:central;
+font-weight:normal;
+text-align:left;
+width:initial;
+padding-left:8px;
+padding-right:50px;
+}
+
+.firstCol, .secondCol, .thirdCol {
+    width: 160px;
+}
+
+.fourthCol {
+    width: 100px;
+}
+
+.country.Mexico {
+background:url(../images/Mexico.png) no-repeat;
+}
+.country.Germany {
+background:url(../images/Germany.png) no-repeat;
+}
+
+.country.UK {
+background:url(../images/UK.png) no-repeat padding-box;
+}
+
+td.country {
+padding-left:33px;
+}

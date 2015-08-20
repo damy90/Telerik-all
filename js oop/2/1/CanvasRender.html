@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Render test</title>
+<script src="Scripts/CanvasRender.js"></script>
+</head>
+<body>
+    <canvas id="myCanvas" width="500" height="400" >
+        Browser doesn't support canvas
+    </canvas>
+    <script>
+        var canvasId = 'myCanvas';
+        var render = new canvasRender(canvasId);
+        //draw line
+        render.drawLine(10, 10, 50, 50, 'purple', 5);
+
+        //draw circle
+        render.drawCircle(100, 100, 50, 'red', 3, '#ABC');
+
+        //draw rect
+        render.drawRect(170, 170, 100, 100 , 'yellow' , 7 , 'yellowgreen');
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: Constantina, Georgia, 'Nimbus Roman No9 L', serif;
+    font-size:16px;
+}
+body {
+    width: 960px;
+}
+
+img.left-arrow {
+    float: left;
+    margin-right: 5px;
+}
+img.right-arrow {
+    float: right;
+    margin-left: 5px;
+}
+img {
+    margin: 35px 0 100%;
+}
+#wrapper div {
+    margin: 25px 0 0 25px;
+    padding: 15px 0;              
+    border: 1px solid black;
+    border-radius: 15px;
+    background: #de28ff;  background: -moz-linear-gradient(top,  #de28ff 0%, #f9dbff 100%);  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#de28ff), color-stop(100%,#f9dbff));  background: -webkit-linear-gradient(top,  #de28ff 0%,#f9dbff 100%);  background: -o-linear-gradient(top,  #de28ff 0%,#f9dbff 100%);  background: -ms-linear-gradient(top,  #de28ff 0%,#f9dbff 100%);  background: linear-gradient(to bottom,  #de28ff 0%,#f9dbff 100%);  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de28ff', endColorstr='#f9dbff',GradientType=0 );
+}
+h1 {
+    padding: 0 35px;
+    font-size: 1.8em;
+}
+p.postedby {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    display: inline-block;
+    margin: 6px 15px;
+    padding: 5px 15px;
+}
+p.info {
+    margin: 15px;
+    text-align: justify;
+}

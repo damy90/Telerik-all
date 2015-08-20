@@ -1,0 +1,111 @@
+<!-- Problem 4. Parse tags
+
+You are given a text. Write a function that changes the text in all regions:
+
+<upcase>text</upcase> to uppercase.
+<lowcase>text</lowcase> to lowercase
+<mixcase>text</mixcase> to mix casing(random)
+Example: We are <mixcase>living</mixcase> in a <upcase>yellow submarine</upcase>. We <mixcase>don't</mixcase> have <lowcase>anything</lowcase> else.
+
+The expected result:
+We are LiVinG in a YELLOW SUBMARINE. We dOn'T have anything else.
+
+Note: Regions can be nested. -->
+
+<h1>Strings</h1>
+<h2>Problem 4. Parse tags</h2>
+<h4>please use console <i>(and Sources for more details)</i></h4>
+<p style="font-size: 0.7em">(F12, Ctrl+Shift+C)</p>
+<h5>description</h5>
+<pre>
+You are given a text. Write a function that changes the text in all regions:
+
+&lt;upcase&gt;text&lt;/upcase> to uppercase.
+&lt;lowcase>text&lt;/lowcase> to lowercase
+&lt;mixcase>text&lt;&#47;mixcase> to mix casing(random)
+Example: We are &lt;mixcase>living&lt;/mixcase> in a &lt;upcase>yellow submarine&lt;/upcase>. We &lt;mixcase>don't&lt;/mixcase> have &lt;lowcase>anything&lt;/lowcase> else.
+
+The expected result:
+We are LiVinG in a YELLOW SUBMARINE. We dOn'T have anything else.
+
+Note: Regions can be nested.
+</pre>
+
+<script>
+var text = "We are <mixcase>living</mixcase> in a <upcase>yellow submarine</upcase>. We <mixcase>don't</mixcase> have <lowcase>AnyThing</lowcase> else.";
+
+var mixCLen = '<mixcase>'.length
+	upCLen = '<upcase>'.length,
+	lowCLen = '<lowcase>'.length,
+	stMix = '<mixcase>',
+	endMix = '</mixcase>',
+	stUp = '<upcase>',
+	endUp = '</upcase>',
+	stLow = '<lowcase>',
+	endLow = '</lowcase>';
+
+function textChange (text) {
+	var word = '',
+		startIndex = 0,
+		endIndex = 0,
+		forTrim = '',
+		renewTXT = text;
+	function changeUpcase (txt) {
+		startIndex = txt.indexOf(stUp);
+		endIndex = txt.indexOf(endUp);
+		word = txt.substring(startIndex + upCLen, endIndex).toUpperCase();	//start & end
+		forTrim = txt.substr(startIndex, (endIndex + upCLen + 1) - startIndex);
+		renewTXT = txt.replace(forTrim, word);
+	}
+	function changeLowcase (txt) {
+		startIndex = txt.indexOf(stLow);
+		endIndex = txt.indexOf(endLow);
+		word = txt.substring(startIndex + lowCLen, endIndex).toLowerCase();
+		forTrim = txt.substr(startIndex, (endIndex + lowCLen + 1) - startIndex);
+		renewTXT = txt.replace(forTrim, word);
+	}
+
+	function changeMixcase (txt) {
+		startIndex = txt.indexOf(stMix);
+		endIndex = txt.indexOf(endMix);
+		word = txt.substring(startIndex + mixCLen, endIndex);
+		// code for mixing >>>
+		var tmp = '';
+		
+		for (var i = 0; i < word.length - 2; i++) {
+			
+			if(Math.random() < 0.5) {
+				tmp += word[i].toUpperCase()
+			} else {
+				tmp += word[i].toLowerCase()
+			}
+		};
+
+		forTrim = txt.substr(startIndex, (endIndex + mixCLen + 1) - startIndex);
+		//return  >> question to who check this task how it is possible to use without return and what is difference
+		renewTXT = txt.replace(forTrim, tmp);
+		// return renewTXT;
+	}
+
+	for (var i = 0; i < text.length; i++) {
+		if (renewTXT.indexOf(stUp) !== -1) {
+			// console.log('has uper');
+			i = renewTXT.indexOf(endUp);	//>>> for speedUP
+			changeUpcase(renewTXT);
+		} else if (renewTXT.indexOf(stLow) !== -1) {
+			// console.log('has lower');
+			changeLowcase(renewTXT);
+		} else if (renewTXT.indexOf(stMix) !== -1) {
+			i = renewTXT.indexOf(endMix);
+			changeMixcase(renewTXT)
+		}
+	};
+
+	return renewTXT;
+
+}
+
+console.log(text)
+var result = textChange(text);
+console.log(result)
+</script>

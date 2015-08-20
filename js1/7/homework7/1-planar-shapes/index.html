@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Problem 1</title>
+    <link href="../styles/js-console.css" rel="stylesheet" />
+</head>
+
+<body>
+    <p>Write functions for working with shapes in standard Planar coordinate system</p>
+    <p>
+        <b>Coordinates are comma separated</b>
+    </p>
+    <form>
+        <fieldset>
+            <legend>Line 0:</legend>
+            <label for="startPointCoords0">Enter startpoint coordinates:</label>
+            <input type="text" id="startPointCoords0" />
+            <label for="endPointCoords0">Enter endpoint coordinates:</label>
+            <input type="text" id="endPointCoords0" />
+            <button onclick="initializeScript('getDistance', '0'); return false;">Calculate distance</button>
+        </fieldset>
+        <fieldset>
+            <legend>Line 1:</legend>
+            <label for="startPointCoords1">Enter startpoint coordinates:</label>
+            <input type="text" id="startPointCoords1" />
+            <label for="endPointCoords0">Enter endpoint coordinates:</label>
+            <input type="text" id="endPointCoords1" />
+            <button onclick="initializeScript('getDistance', '1'); return false;">Calculate distance</button>
+        </fieldset>
+        <fieldset>
+            <legend>Line 2:</legend>
+            <label for="startPointCoords2">Enter startpoint coordinates:</label>
+            <input type="text" id="startPointCoords2" />
+            <label for="endPointCoords2">Enter endpoint coordinates:</label>
+            <input type="text" id="endPointCoords2" />
+            <button onclick="initializeScript('getDistance', '2'); return false;">Calculate distance</button>
+        </fieldset>
+        <button onclick="initializeScript('canFormTriangle'); return false;">Can form a triangle?</button>
+    </form>
+    <div id="console"></div>
+    <div id="js-console"></div>
+    <script src="../js-console.js"></script>
+    <script src="1-planar-shapes.js"></script>
+</body>
+
+</html>

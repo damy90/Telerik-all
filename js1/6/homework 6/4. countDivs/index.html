@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Problem 4</title>
+    <link href="../styles/js-console.css" rel="stylesheet" />
+</head>
+
+<body onload="countDivs()">
+    <h1>4. Number of elements</h1>
+    <p>Write a function to count the number of div elements on the web page</p>
+    <div id="console"></div>
+    <div id="js-console"></div>
+    <script src="../js-console.js"></script>
+    <script>
+        function countDivs() {
+            jsConsole.writeLine("Count of divs: " + document.getElementsByTagName("div").length);
+        }
+    </script>
+</body>
+
+</html>

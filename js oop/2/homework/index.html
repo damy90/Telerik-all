@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Render test</title>
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="500" height="400">
+        Browser dosent support canvas
+    </canvas>
+    <script>
+        var canvasId = 'myCanvas';
+        var render = new canvasRender(canvasId);
+         //draw line
+        render.drawLine(220, 110, 220, 20);
+
+         //draw rect
+        render.drawRect(170, 170, 100, 100, 'yellow', 7, 'yellowgreen');
+
+         //draw elipse
+        render.drawElipse(82, 150, 40, {
+            radiusY: 20,
+            startAngle: Math.PI,
+            endAngle: (2 * Math.PI)
+        });
+    </script>
+</body>
+
+</html>

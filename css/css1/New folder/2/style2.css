@@ -1,0 +1,44 @@
+body {
+
+	font-size:12px;
+	line-height:1.5;
+	font-family:Arial, Tahoma, Verdana, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	clear:both;
+	font-weight:400;
+	margin-bottom:10px;
+}
+
+
+p {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+.flag-ger  {background:url(flag.png) no-repeat 1px 4px;padding-left:25px;}
+.flagmex {background:url(flag.png) no-repeat 1px -22px;padding-left:25px;}
+.flag-gb  {background:url(flag.png) no-repeat 1px -47px;padding-left:25px;}
+ td,  th {
+    border: 1px solid #c7c5ae;
+    font-size: 1.2em;
+    padding: 3px 7px 2px;
+}
+ th {
+    background-color: #59bd06;
+	background-image :url(tbg.png);
+    color: #abe6b0;
+    border: 1px solid #4c9c1b;
+    padding-bottom: 4px;
+    padding-top: 5px;
+    text-align: left;
+}
+ tr.alt td {
+    background-color: #ececd8;
+    color: #000000;
+}

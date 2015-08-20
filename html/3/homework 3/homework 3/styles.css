@@ -1,0 +1,64 @@
+﻿table,th, td
+{
+    border: 1px solid black;
+    border-collapse:collapse;
+}
+
+textarea{
+    border-color:lightgray;
+}
+input, textarea {
+    margin-left: 3px;
+    width: 98%;
+}
+
+#city {
+    width: 60%;
+}
+#state {
+    width: auto;
+}
+#zip {
+    width: 100px;
+}
+#country {
+    width: 300px;
+}
+
+#country-code {
+    width: 10%;
+}
+#area-code {
+    width: 15%;
+}
+#number {
+    width: 60%;
+}
+
+#month {
+    width: 20px;
+}
+#day {
+    width: 20px;
+}
+#year {
+    width: 80px;
+}
+input[type="radio"]{
+    width:auto;
+}
+
+.button {
+    width: auto;
+}
+
+td {
+    width: 510px;
+}
+td:first-child {
+    width: 150px;
+}
+tfoot{
+    text-align:center;
+    background-color: #eaffff;
+}

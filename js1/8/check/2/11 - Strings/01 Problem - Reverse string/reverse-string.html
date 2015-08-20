@@ -1,0 +1,43 @@
+<!-- Problem 1. Reverse string
+
+Write a JavaScript function that reverses a string and returns it.
+Example:
+
+input	output
+sample	elpmas -->
+
+
+<h1>Strings</h1>
+<h2>Problem 1. Reverse string</h2>
+<h4>please use console <i>(and Sources for more details)</i></h4>
+<p style="font-size: 0.7em">(F12, Ctrl+Shift+C)</p>
+<h5>description</h5>
+<pre>
+Write a JavaScript function that reverses a string and returns it.
+Example:
+
+input	output
+sample	elpmas
+</pre>
+
+<script>
+
+var input = 'sample';
+
+function reverses (inline) {
+	// body...
+	console.log(inline);
+	console.log('-= reverse to =-');
+	var i,
+	len = inline.length,
+	output = [];
+	for (i = len - 1; i >= 0; i -= 1) {
+		output[i] = inline[((len - 1) - i)]
+		// console.log(i + ' -> ' + ((len - 1) - i))
+	};
+	console.log(output.join(''));
+}
+
+reverses(input);
+
+</script>

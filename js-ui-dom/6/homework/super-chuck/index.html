@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Super Chuck</title>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="450" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <pattern id="level" x="0" y="0" width="622px" height="439px" patternunits="userSpaceOnUse" patterntransform="translate(0)">
+                <image x="0" y="0" width="622px" height="439px" xlink:href="Endless-level.png" />
+            </pattern>
+        </defs>
+
+        <rect x="0" y="0" fill="url(#level)" width="520px" height="439px">
+        </rect>
+    </svg>
+    <p>Работи само на сървър! Може да се пусне във Visual Studio или на Brackets през live preview-то</p>
+    <script src="pixijs/pixi.js"></script>
+    <script src="chusk-pixi.js"></script>
+    <canvas id="field" width="500" height="439" style="position: absolute; top: 0; " />
+</body>
+
+</html>

@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Super Mario</title>
+</head>
+<body>
+    <div id="scene">
+        <div id="kinetic-scene" style="z-index: 100; position: absolute; left: 0; top: 0;"></div>
+    </div>
+    <style>
+        svg {
+            background-color: #4aa6e2;
+        }
+    </style>
+    <script src="bower_components/kineticjs/kinetic.js"></script>
+    <script src="bower_components/raphael/raphael.js"></script>
+    <script src="js/super-mario.js"></script>
+    <script>
+        window.onload = function () {
+            var scene = {
+                element: document.getElementById('scene'),
+                width: 750,
+                height: 500,
+                ground: {
+                    x: 0,
+                    y: 450,
+                    height: 50,
+                    width: 1000
+                },
+                'background-color': '#4aa6e2'
+            }
+
+            function Mario(scene, stage) {
+                var self = this;
+                this.stage = stage;
+                this.layer = new Kinetic.Layer();
+                this.kineticImage = null;
+                this.step = 10;
+                this.height = 32;
+                this.width = 16;
+                this.position = {
+                    x: self.width * 2,
+                    y: scene.ground.y - self.height + 7
+                };
+                this.action = {
+                    type: 'walk',
+                    stage: 0,
+                    getImage: function () {
+                        var stage = self.imageSprites[self.action.type];
+                        self.action.stage++;
+                        if (self.action.stage == stage.length) {
+                            self.action.stage = 0;
+                        }
+                        return stage[self.action.stage];
+                    }
+                };
+                this.currentDirection = 'right';
+                this.direction = {
+                    left: {
+                        x: 1,
+                        y: 1
+                    },
+                    right: {
+                        x: -1,
+                        y: 1
+                    }
+                };
+                this.imageSprites = {
+                    walk: [
+                        'images/mario_big_1.gif',
+                        'images/mario_big_2.gif'
+                    ]
+                };
+                this.jumpState = 0;
+            }
+
+            Mario.prototype.moveLeft = function moveLeft(skip) {
+                console.log(this.position.x);
+                this.position.x -= this.step;
+                console.log(this.position.x);
+                if (this.currentDirection == 'right' && skip != true) {
+                    this.currentDirection = 'left';
+                    this.position.x -= 10;
+                }
+            };
+
+            Mario.prototype.moveRight = function moveRight(skip) {
+                this.position.x += this.step;
+                if (this.currentDirection == 'left' && skip != true) {
+                    this.currentDirection = 'right';
+                    this.position.x += 10;
+                }
+            };
+
+            Mario.prototype.jump = function jump(self) {
+                self = self || this;
+                switch (self.currentDirection) {
+                    case 'left':
+                        self.moveLeft(true);
+                        break;
+                    case 'right':
+                        self.moveRight(true);
+                        break;
+                }
+                self.position.y -= Math.sin(self.jumpState * Math.PI / 180) * 20;
+                self.jumpState += 20;
+                if (self.jumpState < 360) {
+                    setTimeout(function () {
+                        self.eraseOnPosition();
+                        self.jump(self);
+                        self.draw();
+                    }, 35);
+                } else {
+                    self.jumpState = 0;
+                }
+            }
+
+            Mario.prototype.draw = function drawMario() {
+                var layer = this.layer;
+                var marioImage = new Image();
+                var player = this.kineticImage || new Kinetic.Image({
+                    x: mario.position.x,
+                    y: mario.position.y,
+                    image: marioImage,
+                    width: 16,
+                    height: 32,
+                    scale: mario.direction[mario.currentDirection]
+                });
+                marioImage.onload = function () {
+                    layer.add(player);
+                    stage.add(layer);
+                };
+                marioImage.src = this.action.getImage();
+            };
+
+            Mario.prototype.eraseOnPosition = function eraseOnPosition() {
+                this.layer.remove(this.kineticImage);
+                this.layer = new Kinetic.Layer();
+            };
+
+            //var mario = {
+            //    width: 16,
+            //    height: 32,
+            //    //position: function (mario, scene) {
+            //    //    return {
+            //    //        x: mario.width * 2,
+            //    //        y: scene.ground.y - mario.height + 7
+            //    //    }
+            //    //}(this, scene),
+            //    x: (this.width * 2),
+            //    y: scene.ground.y - this.height + 7,
+            //    currentDirection: 'right',
+            //    direction: {
+            //        left: {
+            //            x: 1,
+            //            y: -1
+            //        },
+            //        right: {
+            //            x: -1,
+            //            y: 1
+            //        }
+            //    },
+            //    imageSprites: {
+            //        walk: [
+            //            'images / mario_big_1.gif',
+            //            'images / mario_big_2.gif'
+            //        ]
+            //    }
+            //};
+
+            var mario = new Mario(scene);
+
+            //console.dir(mario);
+
+            var stage = new Kinetic.Stage({
+                container: 'kinetic-scene',
+                width: scene.width,
+                height: scene.height
+            });
+
+            (function startGame(scene, stage, mario) {
+                loadBackground(scene);
+                loadPlayer(scene, stage, mario);
+                document.addEventListener("keydown", keyPressed, false);
+            })(scene, stage, mario);
+
+            function keyPressed(e) {
+                var keyCode = e.keyCode;
+                switch (keyCode) {
+                    case 37:
+                        mario.eraseOnPosition();
+                        mario.moveLeft();
+                        mario.draw();
+                        break;
+                    case 38:
+                        mario.eraseOnPosition();
+                        mario.jump();
+                        mario.draw();
+                        //for (var i = 0; i <= 360; i += 60) {
+                        //    mario.eraseOnPosition();
+                        //    mario.jump(i);
+                        //    mario.draw();
+                        //}
+                        break;
+                    case 39:
+                        mario.eraseOnPosition();
+                        mario.moveRight();
+                        mario.draw();
+                        break;
+                }
+                //if (keyCode == 13) {
+                //    alert("You hit the enter key.");
+                //} else {
+                //    alert("Oh no you didn't.");
+                //}
+            }
+
+            function loadPlayer(scene, stage, mario) {
+                mario.draw();
+                //var layer = new Kinetic.Layer();
+                //var playerImage = new Image();
+                //playerImage.onload = function () {
+                //    var player = new Kinetic.Image({
+                //        x: mario.position.x,
+                //        y: mario.position.y,
+                //        image: playerImage,
+                //        width: 16,
+                //        height: 32,
+                //        scale: mario.direction[mario.currentDirection]
+                //    });
+                //    layer.add(player);
+                //    stage.add(layer);
+                //};
+                //playerImage.src = 'images/mario_big_1.gif';
+            }
+
+            function loadBackground(scene) {
+                var paper = Raphael(scene.element, scene.width, scene.height);
+                paper.rect(scene.ground.x - 5, scene.ground.y, scene.ground.width + 10, scene.ground.height + 5).attr({
+                    fill: '#996830',
+                    stroke: '#41a511',
+                    'stroke-width': 15
+                });
+                paper.path('M 0,0 M 58,117 M 58,117 M 58,117 Q 83,104 83,104 Q 99,113 112,126 Q 130,132 137,130 Q 137,128 145,123 Q 151,121 182,120 Q 182,120 192,120 Q 200,136 200,141 Q 212,147 220,149 Q 227,163 230,168 Q 230,176 229,179 Q 211,184 201,183 Q 192,177 173,181 Q 156,184 146,193 Q 127,197 116,186 Q 109,175 95,172 Q 78,180 69,189 Q 58,184 52,165 Q 52,157 74,149 Q 82,141 68,133 Q 57,133 58,123 Q 67,123 66,123')
+                .attr({ "type": "path", "stroke": "black", "fill": "white" });
+
+                paper.path('M 0,0 M 361,133 M 361,133 M 361,133 M 361,133 Q 391,134 394,141 Q 394,141 431,146 Q 431,146 457,145 Q 479,162 479,162 Q 485,182 511,162 Q 525,178 531,193 Q 520,207 508,209 Q 488,230 496,249 Q 477,256 460,237 Q 414,255 399,267 Q 360,269 313,228 Q 297,209 354,173 Q 351,140 351,139 Q 372,140 368,140')
+                .attr({ "type": "path", "stroke": "black", "fill": "white" });
+            }
+        }
+    </script>
+</body>
+</html>

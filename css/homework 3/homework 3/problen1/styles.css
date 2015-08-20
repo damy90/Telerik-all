@@ -1,0 +1,24 @@
+﻿ul{
+    list-style-type:none;
+    padding:0 10px;
+    margin:0;
+}
+li{
+    width:120px;
+}
+li ul{
+    display:none;
+}
+li:hover>ul{
+    display:block;
+}
+li a{
+    text-decoration:none;
+    color:black;
+}
+li ul li a{
+    color:darkgray;
+}
+li a:hover{
+    text-decoration:underline;
+}

@@ -1,0 +1,38 @@
+body, ul, li, div, label {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1100px;
+}
+
+    body ul {
+        position: relative;
+        top: 10px;
+        left: 10px;
+        list-style: none;
+    }
+
+        body ul li {
+            display: inline;
+        }
+
+            body ul li input[type="radio"] {
+                display: none;
+            }
+
+                body ul li input[type="radio"]:checked + label div {
+                    display: block;
+                }
+
+            body ul li label img:hover {
+                opacity: 0.7;
+            }
+
+            body ul li label div.photo {
+                position: absolute;
+                display: none;
+                top: 200px;
+                left: 0;
+            }

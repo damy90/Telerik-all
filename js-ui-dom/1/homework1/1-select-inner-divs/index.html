@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Problem 1</title>
+    <link href="../styles/js-console.css" rel="stylesheet" />
+</head>
+
+<body onload="selectInnerDivs()">
+    <p>Write a script that selects all the div nodes that are directly inside other div elements</p>
+    <div id="console"></div>
+    <div id="js-console"></div>
+    <div>
+        <div>
+            <p>div content</p>
+            <div></div>
+        </div>
+    </div>
+    <div>
+        <div></div>
+    </div>
+    <script src="../js-console.js"></script>
+    <script>
+        function selectInnerDivs() {
+            jsConsole.writeLine('getElementsBy: ');
+            var allDivs = document.getElementsByTagName("div");
+
+            //not really selecting
+            for (var i = 0, len = allDivs.length; i < len; i += 1) {
+                if (allDivs[i].parentNode.nodeName == "DIV") {
+                    jsConsole.writeLine(allDivs[i]);
+                }
+            }
+
+            jsConsole.writeLine('querySelectorAll: ');
+            var innerDivs = document.querySelectorAll('div > div');
+            var i;
+            var length = innerDivs.length;
+            for (i = 0; i < length; i++) {
+                jsConsole.writeLine(innerDivs[i]);
+            }
+        }
+    </script>
+</body>
+
+</html>

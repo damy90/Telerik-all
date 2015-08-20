@@ -1,0 +1,23 @@
+body{
+    background-color:#3B3B3B;
+}
+fieldset{
+    border:none;
+    background: url(from-shadow.jpg) 0 100% no-repeat;
+}
+legend, input, button {
+    float: left;
+    margin-left: 15px;
+}
+legend{
+    color:white;
+}
+article{
+    width: 1005px;
+}
+h1{
+    color:#F8D41E;
+}
+p{
+    color:#9F9F9F;
+}

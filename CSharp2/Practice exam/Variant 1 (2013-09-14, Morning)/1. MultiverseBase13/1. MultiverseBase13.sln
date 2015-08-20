@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. MultiverseBase13", "1. MultiverseBase13\1. MultiverseBase13.csproj", "{5C31FA01-DE4E-407E-A142-A41DF9DA4B35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.MagickWords", "2.MagickWords\2.MagickWords.csproj", "{36B36148-58A6-4581-A028-657685EF1286}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. TronNot3D", "3. TronNot3D\3. TronNot3D.csproj", "{709C26BD-CEAB-4BE6-AF21-45584F828A0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Decrypt", "4. Decrypt\4. Decrypt.csproj", "{07B8031E-0E54-41C3-9930-28290F0CA049}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C31FA01-DE4E-407E-A142-A41DF9DA4B35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C31FA01-DE4E-407E-A142-A41DF9DA4B35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C31FA01-DE4E-407E-A142-A41DF9DA4B35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C31FA01-DE4E-407E-A142-A41DF9DA4B35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36B36148-58A6-4581-A028-657685EF1286}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36B36148-58A6-4581-A028-657685EF1286}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36B36148-58A6-4581-A028-657685EF1286}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36B36148-58A6-4581-A028-657685EF1286}.Release|Any CPU.Build.0 = Release|Any CPU
+		{709C26BD-CEAB-4BE6-AF21-45584F828A0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{709C26BD-CEAB-4BE6-AF21-45584F828A0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{709C26BD-CEAB-4BE6-AF21-45584F828A0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{709C26BD-CEAB-4BE6-AF21-45584F828A0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07B8031E-0E54-41C3-9930-28290F0CA049}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07B8031E-0E54-41C3-9930-28290F0CA049}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07B8031E-0E54-41C3-9930-28290F0CA049}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07B8031E-0E54-41C3-9930-28290F0CA049}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

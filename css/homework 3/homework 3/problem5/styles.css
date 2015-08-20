@@ -1,0 +1,75 @@
+body {
+    margin: 0 auto;
+    width: 860px;
+    font-family: sans-serif;
+}
+
+nav{
+    border-bottom:1px solid black;
+    margin-bottom: 10px;
+}
+nav ul {
+    text-align: center;
+    margin-bottom: 5px;
+}
+nav li {
+    display: inline-block;
+
+}
+nav a {
+    padding: 0 10px;
+    color: #1DB7F1;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+article, section {
+    border: 1px solid black;
+}
+
+section {
+    position: relative;
+    overflow: hidden;
+    padding: 10px 0 0 0;
+    width:650px;
+    float: left;
+}
+article {
+    float: left;
+    margin: 0 0 10px 10px;
+    padding: 10px 20px;
+    width: 265px;
+}
+section h2 {
+    float: left;
+    margin-top: -0.85em;
+    padding: 0 7px;
+    background: #fff;
+}
+section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 90px !important;
+    display: block;
+}
+section li {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+aside {
+    float: left;
+    text-align: center;
+    margin-top: 90px;
+    margin-left: 20px;
+}
+aside dl, aside dt, aside dd { 
+    margin: 0; 
+}
+img{
+    float:left;
+}
+article li:last-of-type{
+    float:right;
+}

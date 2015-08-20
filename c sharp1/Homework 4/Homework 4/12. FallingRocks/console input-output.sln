@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "console input-output", "console input-output.csproj", "{F8D7F3B6-C578-40F3-A6A4-BC0BFC0DAA0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "..\ConsoleApplication1\ConsoleApplication1.csproj", "{04D0ED4C-3178-4D7A-B293-CFBC4D21834C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication2", "..\ConsoleApplication2\ConsoleApplication2.csproj", "{94F770EE-2DD3-40C6-9D13-06FA5F121170}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication3", "..\ConsoleApplication3\ConsoleApplication3.csproj", "{CD2848A5-3BA1-4FDD-A3C9-D1B75E939B3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8D7F3B6-C578-40F3-A6A4-BC0BFC0DAA0D}.Debug|x86.ActiveCfg = Debug|x86
+		{F8D7F3B6-C578-40F3-A6A4-BC0BFC0DAA0D}.Debug|x86.Build.0 = Debug|x86
+		{F8D7F3B6-C578-40F3-A6A4-BC0BFC0DAA0D}.Release|x86.ActiveCfg = Release|x86
+		{F8D7F3B6-C578-40F3-A6A4-BC0BFC0DAA0D}.Release|x86.Build.0 = Release|x86
+		{04D0ED4C-3178-4D7A-B293-CFBC4D21834C}.Debug|x86.ActiveCfg = Debug|x86
+		{04D0ED4C-3178-4D7A-B293-CFBC4D21834C}.Debug|x86.Build.0 = Debug|x86
+		{04D0ED4C-3178-4D7A-B293-CFBC4D21834C}.Release|x86.ActiveCfg = Release|x86
+		{04D0ED4C-3178-4D7A-B293-CFBC4D21834C}.Release|x86.Build.0 = Release|x86
+		{94F770EE-2DD3-40C6-9D13-06FA5F121170}.Debug|x86.ActiveCfg = Debug|x86
+		{94F770EE-2DD3-40C6-9D13-06FA5F121170}.Debug|x86.Build.0 = Debug|x86
+		{94F770EE-2DD3-40C6-9D13-06FA5F121170}.Release|x86.ActiveCfg = Release|x86
+		{94F770EE-2DD3-40C6-9D13-06FA5F121170}.Release|x86.Build.0 = Release|x86
+		{CD2848A5-3BA1-4FDD-A3C9-D1B75E939B3B}.Debug|x86.ActiveCfg = Debug|x86
+		{CD2848A5-3BA1-4FDD-A3C9-D1B75E939B3B}.Debug|x86.Build.0 = Debug|x86
+		{CD2848A5-3BA1-4FDD-A3C9-D1B75E939B3B}.Release|x86.ActiveCfg = Release|x86
+		{CD2848A5-3BA1-4FDD-A3C9-D1B75E939B3B}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,34 @@
+<h1>Strings</h1>
+<h2>Problem 10. Find palindromes</h2>
+<h4>please use console <i>(and Sources for more details)</i></h4>
+<p style="font-size: 0.7em">(F12, Ctrl+Shift+C)</p>
+<h5>description</h5>
+<pre>
+Write a program that extracts from a given text all palindromes, e.g. "ABBA", "lamal", "exe".
+</pre>
+
+<script>
+var palindrTxt = 'Write a program that extracts from a given text all palindromes, e.g. "ABBA", "lamal", "exe".';
+
+function isPalindromes (word) {
+	for (var i = 0; i < parseInt(word.length / 2, 10); i++) {
+		if (word[i] !== word[word.length - i - 1]) {
+			return false; 
+		}
+	}
+
+	return true;
+}
+
+function extrWordP (txt) {
+	// body...
+	var allWords = txt.match(/\w+/g);
+	var result = allWords.filter(function searchPalindr (word) {
+		return word.length > 1 && isPalindromes(word);
+	});
+
+	return result;
+}
+console.log(palindrTxt)
+console.log(extrWordP(palindrTxt))
+</script>

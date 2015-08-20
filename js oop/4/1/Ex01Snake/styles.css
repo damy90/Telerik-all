@@ -1,0 +1,7 @@
+.field{
+    position: absolute;
+}
+
+canvas #foreground {
+    z-index: 100;
+}

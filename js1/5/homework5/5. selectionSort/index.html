@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Problem 5: Sort an array. Use the "selection sort" algorithm.</title>
+    <link href="../styles/js-console.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>5. Selection sort</h1>
+    <p>Sorting an array means to arrange its elements in increasing order.</p>
+    <p>Write a script to sort an array.</p>
+    <p>Use the selection sort algorithm: Find the smallest element, move it at the first position, find the smallest from the rest, move it at the second position, etc.</p>
+    <form>
+        <label for="numbers">Input coma separated <b>numbers:</b></label>
+        <input type="text" id="numbers" />
+        <button onclick="selectionSort(); { return false; }">Sort array</button>
+    </form>
+    <div id="console"></div>
+    <div id="js-console"></div>
+    <script src="../js-console.js"></script>
+    <script src="selection-sort-5.js"></script>
+</body>
+
+</html>

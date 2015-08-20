@@ -1,0 +1,48 @@
+<!-- Problem 3. Sub-string in text
+
+Write a JavaScript function that finds how many times a substring is contained in a given text (perform case insensitive search).
+Example:
+
+The target sub-string is in
+
+The text is as follows: We are living in an yellow submarine. We don't have anything else. inside the submarine is very tight. So we are drinking all the day. We will move out of it in 5 days.
+
+The result is: 9 -->
+
+<h1>Strings</h1>
+<h2>Problem 3. Sub-string in text</h2>
+<h4>please use console <i>(and Sources for more details)</i></h4>
+<p style="font-size: 0.7em">(F12, Ctrl+Shift+C)</p>
+<h5>description</h5>
+<pre>
+Write a JavaScript function that finds how many times a substring is contained in a given text (perform case insensitive search).
+
+Example:
+
+The target sub-string is in
+
+The text is as follows: We are living in an yellow submarine. We don't have anything else. inside the submarine is very tight. So we are drinking all the day. We will move out of it in 5 days.
+
+The result is: 9
+</pre>
+
+<script>
+    var text = "The text is as follows: We are living In an yellow submarine. We don't have anything else. inside the submarine is very tight. So we are drinking all the day. We will move out of it in 5 days.",
+        key = 'in';
+
+    function countSubCountain(text, sub) {
+        var counter = 0,
+            currPos = 0;
+        for (var i = 0; i < text.length; i++) {
+            currPos = text.indexOf(sub, i)
+            if (currPos !== -1) {
+                counter++;
+                i = currPos;
+            } else {
+                return ('The result is: ' + counter);
+            }
+        }
+    }
+
+    console.log(countSubCountain(text, key))
+</script>

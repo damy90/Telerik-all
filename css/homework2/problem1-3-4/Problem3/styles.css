@@ -1,0 +1,22 @@
+﻿body>div{
+    height:50px;
+}
+
+div{
+    background-color:black;
+    border-radius: 100px;
+    width: 90%;
+    top: 1px;
+    position: absolute;
+    box-shadow: inset 0px 0px 0px 1px red;
+    left: 1px;
+    bottom: 1px;
+}
+#buttons {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+input[type="button"]{
+
+}

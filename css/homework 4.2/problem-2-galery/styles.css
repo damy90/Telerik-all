@@ -1,0 +1,36 @@
+a {
+  cursor: pointer; }
+
+.gallerycontainer {
+  position: relative;
+  /*Add a height attribute and set to largest image's height to prevent overlaying*/ }
+
+.thumbnail img {
+  border: 2px solid white;
+  margin: 0 5px 5px 0; }
+.thumbnail:focus {
+  outline: none; }
+  .thumbnail:focus > img {
+    border: 2px solid blue; }
+  .thumbnail:focus span {
+    /*CSS for enlarged image*/
+    visibility: visible;
+    top: 90px;
+    left: 0;
+    /*position where enlarged image should offset horizontally */
+    z-index: 50; }
+.thumbnail span {
+  /*CSS for enlarged image*/
+  position: absolute;
+  background-color: lightyellow;
+  padding: 5px;
+  left: -1000px;
+  border: 1px dashed gray;
+  visibility: hidden;
+  color: black;
+  text-decoration: none; }
+  .thumbnail span img {
+    /*CSS for enlarged image*/
+    border-width: 0;
+    padding: 2px; }
+

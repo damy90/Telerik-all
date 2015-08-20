@@ -1,0 +1,76 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:'Courier New', Courier, 'Nimbus Mono L', monospace;
+    font-size:16px;
+}
+body{
+    width:960px;
+}
+/*gloal*/
+li{
+    list-style-type:none;
+}
+li a{
+    color:#5E5E79;
+    text-decoration:none;
+}
+img{
+    height: 15px;
+}
+/*list*/
+ul.notification-list{
+    border:1px solid black;
+    border-radius: 15px 15px 0 0;
+    border-bottom:none;
+    margin: 25px;
+    width: 470px;
+
+    background: #afafaf;
+    background: -moz-linear-gradient(top,  #afafaf 0%, #dcdcdc 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#afafaf), color-stop(100%,#dcdcdc));
+    background: -webkit-linear-gradient(top,  #afafaf 0%,#dcdcdc 100%);
+    background: -o-linear-gradient(top,  #afafaf 0%,#dcdcdc 100%);
+    background: -ms-linear-gradient(top,  #afafaf 0%,#dcdcdc 100%);
+    background: linear-gradient(to bottom,  #afafaf 0%,#dcdcdc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#afafaf', endColorstr='#dcdcdc',GradientType=0 );
+}
+.notification-list > li{
+    display: inline-block;
+    padding: 5px 15.5px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.notification-list > li:first-of-type{
+    border-left: none;
+}
+.notification-list > li > a, ul.notification-list > li > a span{
+    font-size: 1.1em !important;
+}
+/*sublist*/
+div.content{
+    display:none;
+}
+li:hover > div.content {
+    display: block;
+    position:absolute;
+    width: 455px;
+    left: 25px;
+    border: 1px solid black;
+    border-top: none;
+    padding-left: 15px;
+    background-color: #DCDCDC;
+    z-index: -1;
+}
+.notification-list > li:hover{
+    border-bottom: none;
+}
+.content li {
+    padding: 5px 0;
+}
+.content ul {
+    padding-top: 5px;
+}
+.content li span {
+    padding-left: 5px;
+}
