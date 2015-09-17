@@ -288,8 +288,13 @@ class Program
 ```
 
 Резултат:
+
 Use window
+
 Linux - Draw
+
 Use DialogWindow
+
 Linux - Draw
+
 Execute dialog window specific logic
