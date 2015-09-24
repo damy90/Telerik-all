@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 12.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 51448)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_svg "http://www.w3.org/2000/svg">
+	<!ENTITY ns_xlink "http://www.w3.org/1999/xlink">
+]>
+<svg  version="1.1" id="Layer_1" xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" width="780.373" height="446.201"
+	 viewBox="0 0 780.373 446.201" overflow="visible" enable-background="new 0 0 780.373 446.201" xml:space="preserve">
+<rect x="204.241" y="228.072" fill="none" width="140.818" height="23.867"/>
+<text transform="matrix(1 0 0 1 204.2412 245.8647)" font-family="'Myriad-Roman'" font-size="25.0607">(Implements)</text>
+<rect x="288.97" y="51.634" fill="none" width="157.524" height="23.868"/>
+<text transform="matrix(1 0 0 1 288.9702 69.4277)" font-family="'Myriad-Roman'" font-size="25.0607">(Containment)</text>
+<rect x="636.058" y="225.503" fill="none" width="140.818" height="23.867"/>
+<text transform="matrix(1 0 0 1 636.0581 243.2964)" font-family="'Myriad-Roman'" font-size="25.0607">(Implements)</text>
+<g>
+	<line fill="none" stroke="#3B111A" stroke-width="2" x1="474.34" y1="79.479" x2="248.435" y2="79.479"/>
+	<line fill="none" stroke="#3B111A" stroke-width="2" x1="352.094" y1="122.44" x2="464.793" y2="122.44"/>
+	<line fill="none" stroke="#3B111A" stroke-width="2" x1="352.616" y1="122.44" x2="352.616" y2="261.087"/>
+	<line fill="none" stroke="#3B111A" stroke-width="2" x1="779.373" y1="364.911" x2="779.373" y2="88.828"/>
+	<line fill="none" stroke="#3B111A" stroke-width="2" x1="779.373" y1="88.828" x2="743.842" y2="88.828"/>
+	<polygon fill="#FFFFFF" stroke="#3B111A" stroke-width="2" points="473.46,122.44 464.479,113.459 464.479,131.42 	"/>
+	<polygon fill="#FFFFFF" stroke="#3B111A" stroke-width="2" points="734.861,88.828 743.842,97.809 743.842,79.847 	"/>
+	<polygon fill="#FFFFFF" stroke="#3B111A" stroke-width="2" points="248.435,79.672 239.247,85.645 230.059,79.672 239.247,73.7 	
+		"/>
+	<line fill="none" stroke="#3B111A" stroke-width="2" x1="352.616" y1="261.087" x2="177.191" y2="261.087"/>
+	<line fill="none" stroke="#3B111A" stroke-width="2" x1="177.191" y1="261.087" x2="177.191" y2="311.329"/>
+	<line fill="none" stroke="#3B111A" stroke-width="2" x1="779.373" y1="364.911" x2="672.418" y2="364.911"/>
+</g>
+<line fill="none" stroke="#000000" stroke-width="0.75" x1="1.766" y1="42.484" x2="228.433" y2="42.484"/>
+<line fill="none" stroke="#000000" stroke-width="0.75" x1="474.34" y1="99.766" x2="734.258" y2="99.766"/>
+<line fill="none" stroke="#000000" stroke-width="0.75" x1="401.544" y1="348.203" x2="672.418" y2="348.203"/>
+<g>
+	<path fill="#CEEBEE" stroke="#1E1E56" d="M228.433,120.551c0,7.909-6.675,14.32-14.909,14.32H15.408
+		c-8.233,0-14.908-6.412-14.908-14.32V14.82C0.5,6.912,7.175,0.5,15.408,0.5h198.116c8.234,0,14.909,6.412,14.909,14.32V120.551z"/>
+	<path fill="#CEEBEE" stroke="#1E1E56" d="M734.258,139.645c0,7.909-7.61,14.32-17,14.32H491.34c-9.388,0-17-6.411-17-14.32V33.915
+		c0-7.909,7.612-14.321,17-14.321h225.918c9.39,0,17,6.412,17,14.321V139.645z"/>
+	<path fill="#CEEBEE" stroke="#1E1E56" d="M672.418,426.27c0,7.909-7.932,14.32-17.718,14.32H419.261
+		c-9.784,0-17.717-6.411-17.717-14.32V320.539c0-7.908,7.933-14.32,17.717-14.32h235.439c9.786,0,17.718,6.412,17.718,14.32V426.27z
+		"/>
+	<path fill="#CEEBEE" stroke="#1E1E56" d="M318.009,431.38c0,7.909-7.81,14.32-17.444,14.32H68.756
+		c-9.634,0-17.444-6.411-17.444-14.32V325.649c0-7.908,7.811-14.32,17.444-14.32h231.808c9.635,0,17.444,6.412,17.444,14.32V431.38z
+		"/>
+</g>
+<line fill="none" stroke="#000000" stroke-width="0.75" x1="51.312" y1="353.313" x2="318.009" y2="353.313"/>
+<rect x="86.607" y="9.07" fill="none" width="96.95" height="27.957"/>
+<text transform="matrix(1 0 0 1 86.6079 26.8628)" font-family="'Myriad-Roman'" font-size="25.0607" letter-spacing="1">Context</text>
+<rect x="71.094" y="318.37" fill="none" width="225.833" height="27.955"/>
+<text transform="matrix(1 0 0 1 71.0938 336.1616)" font-family="'Myriad-Roman'" font-size="25.0607" letter-spacing="1">ConcreteStrategyA</text>
+<rect x="71.094" y="400.711" fill="none" width="225.833" height="27.956"/>
+<text transform="matrix(1 0 0 1 71.0938 415.9624)" font-family="'Myriad-Roman'" font-size="21.4806" letter-spacing="1">+AlgorithmInterface()</text>
+<rect x="11.425" y="93.799" fill="none" width="197.192" height="27.956"/>
+<text transform="matrix(1 0 0 1 11.4253 109.0503)" font-family="'Myriad-Roman'" font-size="21.4806" letter-spacing="1">+ContextInterface()</text>
+<rect x="425.524" y="400.711" fill="none" width="225.834" height="27.956"/>
+<text transform="matrix(1 0 0 1 425.5239 415.9624)" font-family="'Myriad-Roman'" font-size="21.4806" letter-spacing="1">+AlgorithmInterface()</text>
+<rect x="493.546" y="116.473" fill="none" width="222.253" height="27.956"/>
+<text transform="matrix(1 0 0 1 493.5464 131.7241)" font-family="'Myriad-Roman'" font-size="21.4806" letter-spacing="1">+AlgorithmInterface()</text>
+<rect x="425.524" y="318.37" fill="none" width="225.834" height="27.955"/>
+<text transform="matrix(1 0 0 1 425.5239 336.1616)" font-family="'Myriad-Roman'" font-size="25.0607" letter-spacing="1">ConcreteStrategyB</text>
+<rect x="544.861" y="36.407" fill="none" width="100.929" height="27.956"/>
+<text transform="matrix(1 0 0 1 544.8608 54.1997)" font-family="'Myriad-Roman'" font-size="25.0607" letter-spacing="1">Strategy</text>
+<rect x="519.799" y="63.058" fill="none" width="177.304" height="27.957"/>
+<text transform="matrix(1 0 0 1 519.7993 78.3091)" fill="#424242" font-family="'Myriad-Roman'" font-size="21.4806" letter-spacing="1">&lt;&lt;interface&gt;&gt;</text>
+</svg>
